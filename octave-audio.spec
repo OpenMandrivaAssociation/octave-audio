@@ -2,9 +2,9 @@
 
 Summary:	Audio recording, processing and playing tools
 Name:		octave-%{octpkg}
-Version:	2.0.4
+Version:	2.0.5
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Sciences/Mathematics
 Url:		https://octave.sourceforge.io/%{octpkg}/

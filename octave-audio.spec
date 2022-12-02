@@ -7,7 +7,7 @@ Release:	1
 Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 
 BuildRequires:	octave-devel > 4.0.0
 BuildRequires:	pkgconfig(rtmidi)
@@ -21,8 +21,6 @@ Requires(postun): octave
 %description
 The Audio toolkit is a set of functions for manipulating MIDI devices and
 files for GNU Octave.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING

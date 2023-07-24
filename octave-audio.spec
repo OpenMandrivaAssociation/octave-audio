@@ -1,15 +1,15 @@
 %global octpkg audio
 
-Summary:	Audio recording, processing and playing tools
-Name:		octave-%{octpkg}
-Version:	2.0.5
+Summary:	Audio and MIDI Toolbox for GNU Octave
+Name:		octave-audio
+Version:	2.0.6
 Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
-License:	GPLv2+
+License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+Url:		https://packages.octave.org/audio/
+Source0:	https://github.com/gnu-octave/octave-audio/releases/download/release-%{version}/audio-%{version}.tar.gz
 
-BuildRequires:	octave-devel > 4.0.0
+BuildRequires:	octave-devel >= 4.0.0
 BuildRequires:	pkgconfig(rtmidi)
 BuildRequires:	texinfo
 
@@ -25,15 +25,15 @@ files for GNU Octave.
 %files
 %license COPYING
 %doc NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
 
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -n %{octpkg}-%{version}
+%autosetup -p1 -n %{octpkg}-%{version}
 
 %build
 export LIBS="-L%{_libdir}"

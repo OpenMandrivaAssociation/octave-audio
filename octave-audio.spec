@@ -1,4 +1,5 @@
 %global octpkg audio
+%global optflags %{optflags} -I%{_includedir}/rtmidi
 
 Summary:	Audio and MIDI Toolbox for GNU Octave
 Name:		octave-audio

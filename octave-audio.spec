@@ -30,6 +30,7 @@ files for GNU Octave.
 %{octpkgdir}/*
 %dir %{octpkglibdir}
 %{octpkglibdir}/*
+%{_metainfodir}/*.metainfo.xml
 
 #---------------------------------------------------------------------------
 

@@ -4,7 +4,7 @@
 Summary:	Audio and MIDI Toolbox for GNU Octave
 Name:		octave-audio
 Version:	2.0.9
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/audio/
